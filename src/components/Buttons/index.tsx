@@ -1,13 +1,17 @@
-import { LoginButtonStyle, SignInButtonStyle } from "./styles";
+import { FilledButtonStyle, OutlinedButtonStyle } from "./styles";
 
-export function SignInButton() {
+interface ButtonProps {
+  content: string
+}
+
+export function OutlinedButton(props: ButtonProps) {
   return(
-    <SignInButtonStyle>Increva-se</SignInButtonStyle>
+    <OutlinedButtonStyle>{props.content}</OutlinedButtonStyle>
   )
 }
 
-export function LoginButton() {
+export function FilledButton(props: ButtonProps) {
   return(
-    <LoginButtonStyle>Login</LoginButtonStyle>
+    <FilledButtonStyle>{props.content}</FilledButtonStyle>
   )
 }
