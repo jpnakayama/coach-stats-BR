@@ -9,17 +9,16 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${(props) => props.theme['green-700']};
   }
 
   body {
     background-color: ${(props) => props.theme['bg-primary-color']};
-    color: #FFF;
+    color: ${props => props.theme['font-primary-color']};
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, textarea, button {
-    font: 400 1rem Barlow, sans-serif;
+    font: 400 1rem Inter, sans-serif;
   }
 
   h2 {
