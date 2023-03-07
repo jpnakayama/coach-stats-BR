@@ -1,66 +1,42 @@
 import styled from "styled-components";
-import bannerBG from "assets/img/home-banner-bg.svg"
 
 export const HomeBannerContainer = styled.section`
-  background-image: url(${bannerBG});
-  background-repeat: no-repeat;
-  background-size: contain;
-  
   width: 100vw;
-  height: 100vh;
-  padding: 5rem 0;
-`
+  padding: 1rem 0;
+  `
 
 export const HomeBannerContent = styled.div`
-  max-width: 45vw;
-  float: right;
-
+  width: 100vw;
   margin: 0 auto;
-  padding: 5rem 3rem 0
+  display: flex;
+  gap: 1rem;
+
+  align-items: center;
 `
 
 export const HomeBannerTitle = styled.div`
-  margin: 0 auto;
+  margin: 0 2rem;
   text-align: center;
 
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-
+  gap: 2rem;
+  
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   p {
     font-weight: 700;
+    line-height: 2rem;
   }
-`
 
-export const HomeBannerSearch = styled.form`
-  margin: 5rem auto 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-
-  input {
-    padding: 0.8rem 3rem;
-
-    border: 2px solid gray;
-    width: 70%;
-    background-color: transparent;
-    color: ${props => props.theme["font-secondary-color"]};
-    
-    ::placeholder {
-      text-align: center;
-    }
-    
-    :focus {
-      border: 2px solid ${props => props.theme["font-secondary-color"]};
-    }
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
-  
+
   button {
     :hover {
       background-color: ${props => props.theme["font-secondary-color"]};
@@ -69,3 +45,4 @@ export const HomeBannerSearch = styled.form`
     }
   }
 `
+
